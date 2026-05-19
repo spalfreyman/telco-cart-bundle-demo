@@ -1,0 +1,25 @@
+{
+  "key": "5g-unlimited-monthly-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Unlimited 5G — Monthly Fee" },
+  "slug": { "en": "5g-unlimited-monthly-fee" },
+  "description": { "en": "Monthly recurring fee for the Unlimited 5G plan." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "5g-unlimited-monthly-fee-mv",
+    "sku": "5G-UNL-MONTH",
+    "attributes": [
+      { "name": "fee-type", "value": "monthly" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 2999
+        }
+      }
+    ]
+  },
+  "publish": true
+}

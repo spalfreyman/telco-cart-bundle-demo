@@ -1,0 +1,36 @@
+{
+  "key": "5g-unlimited-plan",
+  "productType": { "typeId": "product-type", "key": "telco-sellable-bundle" },
+  "name": { "en": "Unlimited 5G Plan" },
+  "slug": { "en": "5g-unlimited-plan" },
+  "description": { "en": "Sellable plan bundling the activation, monthly, and yearly fees for Unlimited 5G service." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "5g-unlimited-plan-mv",
+    "sku": "5G-UNL-PLAN",
+    "attributes": [
+      {
+        "name": "initial-fee-product",
+        "value": { "typeId": "product", "key": "5g-unlimited-initial-fee" }
+      },
+      {
+        "name": "monthly-fee-product",
+        "value": { "typeId": "product", "key": "5g-unlimited-monthly-fee" }
+      },
+      {
+        "name": "yearly-fee-product",
+        "value": { "typeId": "product", "key": "5g-unlimited-yearly-fee" }
+      }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 0
+        }
+      }
+    ]
+  },
+  "publish": true
+}

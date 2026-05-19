@@ -1,0 +1,25 @@
+{
+  "key": "5g-unlimited-yearly-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Unlimited 5G — Yearly Fee" },
+  "slug": { "en": "5g-unlimited-yearly-fee" },
+  "description": { "en": "Yearly recurring fee for the Unlimited 5G plan (prepaid discount)." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "5g-unlimited-yearly-fee-mv",
+    "sku": "5G-UNL-YEAR",
+    "attributes": [
+      { "name": "fee-type", "value": "yearly" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 29999
+        }
+      }
+    ]
+  },
+  "publish": true
+}

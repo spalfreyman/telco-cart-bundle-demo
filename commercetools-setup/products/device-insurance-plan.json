@@ -1,0 +1,36 @@
+{
+  "key": "device-insurance-plan",
+  "productType": { "typeId": "product-type", "key": "telco-sellable-bundle" },
+  "name": { "en": "Device Insurance Add-on" },
+  "slug": { "en": "device-insurance-plan" },
+  "description": { "en": "Optional add-on covering accidental damage and theft for your device, sold alongside a 5G plan." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "device-insurance-plan-mv",
+    "sku": "DEV-INS-PLAN",
+    "attributes": [
+      {
+        "name": "initial-fee-product",
+        "value": { "typeId": "product", "key": "device-insurance-initial-fee" }
+      },
+      {
+        "name": "monthly-fee-product",
+        "value": { "typeId": "product", "key": "device-insurance-monthly-fee" }
+      },
+      {
+        "name": "yearly-fee-product",
+        "value": { "typeId": "product", "key": "device-insurance-yearly-fee" }
+      }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 0
+        }
+      }
+    ]
+  },
+  "publish": true
+}

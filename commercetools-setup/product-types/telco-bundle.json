@@ -1,0 +1,31 @@
+{
+  "key": "telco-bundle",
+  "name": "Telco Bundle",
+  "description": "Top-level telco bundle that groups included and optional sellable products (e.g. phone plan + add-ons).",
+  "attributes": [
+    {
+      "name": "included-products",
+      "label": { "en": "Included Products" },
+      "isRequired": false,
+      "isSearchable": false,
+      "type": {
+        "name": "set",
+        "elementType": { "name": "reference", "referenceTypeId": "product" }
+      },
+      "attributeConstraint": "None",
+      "inputTip": { "en": "Products that are always part of this bundle." }
+    },
+    {
+      "name": "optional-products",
+      "label": { "en": "Optional Products" },
+      "isRequired": false,
+      "isSearchable": false,
+      "type": {
+        "name": "set",
+        "elementType": { "name": "reference", "referenceTypeId": "product" }
+      },
+      "attributeConstraint": "None",
+      "inputTip": { "en": "Products that customers can optionally add to this bundle." }
+    }
+  ]
+}

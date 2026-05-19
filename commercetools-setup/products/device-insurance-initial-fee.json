@@ -1,0 +1,25 @@
+{
+  "key": "device-insurance-initial-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Device Insurance — Setup Fee" },
+  "slug": { "en": "device-insurance-initial-fee" },
+  "description": { "en": "One-off setup fee for the optional Device Insurance add-on." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "device-insurance-initial-fee-mv",
+    "sku": "DEV-INS-INIT",
+    "attributes": [
+      { "name": "fee-type", "value": "initial" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1500
+        }
+      }
+    ]
+  },
+  "publish": true
+}

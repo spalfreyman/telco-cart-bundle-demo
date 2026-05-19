@@ -1,0 +1,25 @@
+{
+  "key": "device-insurance-yearly-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Device Insurance — Yearly Fee" },
+  "slug": { "en": "device-insurance-yearly-fee" },
+  "description": { "en": "Yearly prepaid fee for the Device Insurance add-on." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "device-insurance-yearly-fee-mv",
+    "sku": "DEV-INS-YEAR",
+    "attributes": [
+      { "name": "fee-type", "value": "yearly" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 7999
+        }
+      }
+    ]
+  },
+  "publish": true
+}

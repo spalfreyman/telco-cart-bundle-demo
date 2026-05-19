@@ -1,0 +1,34 @@
+{
+  "key": "telco-sellable-bundle",
+  "name": "Telco Sellable Bundle",
+  "description": "A sellable telco bundle composed of up to three linked fee products: initial, monthly recurring, and yearly recurring. All three references are optional so a plan can be billed as any combination of one-off + recurring fees.",
+  "attributes": [
+    {
+      "name": "initial-fee-product",
+      "label": { "en": "Initial Fee Product" },
+      "isRequired": false,
+      "isSearchable": false,
+      "type": { "name": "reference", "referenceTypeId": "product" },
+      "attributeConstraint": "None",
+      "inputTip": { "en": "Optional reference to the one-off initial fee product (e.g. setup/activation)." }
+    },
+    {
+      "name": "monthly-fee-product",
+      "label": { "en": "Monthly Recurring Fee Product" },
+      "isRequired": false,
+      "isSearchable": false,
+      "type": { "name": "reference", "referenceTypeId": "product" },
+      "attributeConstraint": "None",
+      "inputTip": { "en": "Optional reference to the monthly recurring fee product." }
+    },
+    {
+      "name": "yearly-fee-product",
+      "label": { "en": "Yearly Recurring Fee Product" },
+      "isRequired": false,
+      "isSearchable": false,
+      "type": { "name": "reference", "referenceTypeId": "product" },
+      "attributeConstraint": "None",
+      "inputTip": { "en": "Optional reference to the yearly recurring fee product." }
+    }
+  ]
+}

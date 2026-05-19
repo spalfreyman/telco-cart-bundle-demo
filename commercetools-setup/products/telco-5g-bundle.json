@@ -1,0 +1,36 @@
+{
+  "key": "telco-5g-bundle",
+  "productType": { "typeId": "product-type", "key": "telco-bundle" },
+  "name": { "en": "Telco 5G Bundle" },
+  "slug": { "en": "telco-5g-bundle" },
+  "description": { "en": "Top-level telco offering: includes the Unlimited 5G Plan with the option to add Device Insurance." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "telco-5g-bundle-mv",
+    "sku": "TELCO-5G-BUNDLE",
+    "attributes": [
+      {
+        "name": "included-products",
+        "value": [
+          { "typeId": "product", "key": "5g-unlimited-plan" }
+        ]
+      },
+      {
+        "name": "optional-products",
+        "value": [
+          { "typeId": "product", "key": "device-insurance-plan" }
+        ]
+      }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 0
+        }
+      }
+    ]
+  },
+  "publish": true
+}

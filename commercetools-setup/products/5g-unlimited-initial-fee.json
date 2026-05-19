@@ -1,0 +1,25 @@
+{
+  "key": "5g-unlimited-initial-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Unlimited 5G — Activation Fee" },
+  "slug": { "en": "5g-unlimited-initial-fee" },
+  "description": { "en": "One-off activation fee for the Unlimited 5G plan." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "5g-unlimited-initial-fee-mv",
+    "sku": "5G-UNL-INIT",
+    "attributes": [
+      { "name": "fee-type", "value": "initial" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 4900
+        }
+      }
+    ]
+  },
+  "publish": true
+}

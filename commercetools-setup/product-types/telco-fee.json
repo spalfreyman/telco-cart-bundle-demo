@@ -1,0 +1,23 @@
+{
+  "key": "telco-fee",
+  "name": "Telco Fee",
+  "description": "A fee product representing one of the three telco fee cadences: initial (one-off), monthly recurring, or yearly recurring. The cadence is recorded on the fee-type enum attribute, which is searchable and SameForAll variants of the product.",
+  "attributes": [
+    {
+      "name": "fee-type",
+      "label": { "en": "Fee Type" },
+      "isRequired": true,
+      "isSearchable": true,
+      "type": {
+        "name": "enum",
+        "values": [
+          { "key": "initial", "label": "Initial" },
+          { "key": "monthly", "label": "Monthly" },
+          { "key": "yearly", "label": "Yearly" }
+        ]
+      },
+      "attributeConstraint": "SameForAll",
+      "inputTip": { "en": "Which fee cadence this product represents." }
+    }
+  ]
+}

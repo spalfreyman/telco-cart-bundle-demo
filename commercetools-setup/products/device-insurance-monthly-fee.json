@@ -1,0 +1,25 @@
+{
+  "key": "device-insurance-monthly-fee",
+  "productType": { "typeId": "product-type", "key": "telco-fee" },
+  "name": { "en": "Device Insurance — Monthly Fee" },
+  "slug": { "en": "device-insurance-monthly-fee" },
+  "description": { "en": "Monthly recurring fee for the Device Insurance add-on." },
+  "taxCategory": { "typeId": "tax-category", "key": "Standard" },
+  "masterVariant": {
+    "key": "device-insurance-monthly-fee-mv",
+    "sku": "DEV-INS-MONTH",
+    "attributes": [
+      { "name": "fee-type", "value": "monthly" }
+    ],
+    "prices": [
+      {
+        "value": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 799
+        }
+      }
+    ]
+  },
+  "publish": true
+}
