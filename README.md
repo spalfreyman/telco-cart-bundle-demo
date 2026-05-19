@@ -77,6 +77,7 @@ netlify/functions/
 commercetools-setup/
   product-types/      — ProductTypeDraft JSON for the 3 product types
   products/           — ProductDraft JSON for the 9 sample products
+  cart-discounts/     — CartDiscountDraft JSON for the 2 cross-bundle promotions
   telco-bundle-line-item-type.json  — line-item custom Type draft
 netlify.toml          — routing + functions config
 ```

@@ -1,0 +1,17 @@
+{
+  "key": "5g-bundle-insurance-initial-10pct",
+  "name": { "en": "10% off Device Insurance setup fee when bought with Unlimited 5G" },
+  "description": {
+    "en": "Applies a 10% discount to the Device Insurance initial/setup fee line item when the cart also contains the Unlimited 5G Plan (the bundle wrapper, the sellable plan, or any of its three fees)."
+  },
+  "value": { "type": "relative", "permyriad": 1000 },
+  "cartPredicate": "lineItemCount(product.key = \"telco-5g-bundle\" or product.key = \"5g-unlimited-plan\" or product.key = \"5g-unlimited-initial-fee\" or product.key = \"5g-unlimited-monthly-fee\" or product.key = \"5g-unlimited-yearly-fee\") > 0",
+  "target": {
+    "type": "lineItems",
+    "predicate": "product.key = \"device-insurance-initial-fee\""
+  },
+  "sortOrder": "0.55",
+  "isActive": true,
+  "requiresDiscountCode": false,
+  "stackingMode": "Stacking"
+}
