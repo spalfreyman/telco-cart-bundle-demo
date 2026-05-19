@@ -1,0 +1,45 @@
+{
+  "key": "telco-bundle-line-item",
+  "name": { "en": "Telco bundle line item custom fields" },
+  "description": {
+    "en": "Cross-references between bundle line items and the sub-product line items spawned from them by the cart-bundle-expander extension."
+  },
+  "resourceTypeIds": ["line-item"],
+  "fieldDefinitions": [
+    {
+      "name": "parentLineItemId",
+      "label": { "en": "Parent line item ID" },
+      "required": false,
+      "type": { "name": "String" },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "parentBundleProductKey",
+      "label": { "en": "Parent bundle product key" },
+      "required": false,
+      "type": { "name": "String" },
+      "inputHint": "SingleLine"
+    },
+    {
+      "name": "bundleRole",
+      "label": { "en": "Role within the parent bundle" },
+      "required": false,
+      "type": {
+        "name": "Enum",
+        "values": [
+          { "key": "included", "label": "Included sub-bundle" },
+          { "key": "optional", "label": "Optional add-on" },
+          { "key": "initial-fee", "label": "Initial fee" },
+          { "key": "monthly-fee", "label": "Monthly recurring fee" },
+          { "key": "yearly-fee", "label": "Yearly recurring fee" }
+        ]
+      }
+    },
+    {
+      "name": "expanded",
+      "label": { "en": "Already expanded by extension" },
+      "required": false,
+      "type": { "name": "Boolean" }
+    }
+  ]
+}

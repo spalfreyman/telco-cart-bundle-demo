@@ -1,0 +1,19 @@
+node_modules/
+.DS_Store
+
+# Local credentials and tokens — never commit
+.env
+.env.*
+*.tok
+ctp.env
+
+# Claude Code per-project settings (may embed credentials in approved Bash commands)
+.claude/
+
+# Netlify local state
+.netlify/
+
+# Editor / OS noise
+.vscode/
+.idea/
+*.swp

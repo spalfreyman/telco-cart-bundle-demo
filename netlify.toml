@@ -1,0 +1,26 @@
+[build]
+  publish = "web/public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/api/cart"
+  to = "/.netlify/functions/cart"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/cart/*"
+  to = "/.netlify/functions/cart/:splat"
+  status = 200
+  force = true
+
+# Public extension webhook URL — register this in commercetools as the
+# Extension destination (HTTP type) to use the deployed handler in production.
+[[redirects]]
+  from = "/extension"
+  to = "/.netlify/functions/extension"
+  status = 200
+  force = true
